@@ -10,7 +10,23 @@ import lombok.*;
 @ToString
 public class CountryResponseVO {
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     private Long id;
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     private String name;
 }
